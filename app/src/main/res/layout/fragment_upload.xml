@@ -1,0 +1,228 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebFragment"
+    android:background="@color/bg_grey">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            card_view:cardCornerRadius="20dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/release_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:fontFamily="@font/strait_normal"
+                        android:textSize="30dp"
+                        android:text="Upload"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title*"
+                        android:fontFamily="@font/strait_normal"
+                        android:textSize="15dp"
+                        android:paddingLeft="15dp">
+
+                    </TextView>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"></Space>
+
+                    <EditText
+                        android:layout_width="370dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/cust_edittextround2"
+                        android:fontFamily="@font/strait_normal"
+                        android:layout_gravity="center"
+                        android:inputType="text"
+                        android:hint=""
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:textColorHint="@color/black">
+                    </EditText>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Artist*"
+                        android:fontFamily="@font/strait_normal"
+                        android:textSize="15dp"
+                        android:paddingLeft="15dp">
+
+                    </TextView>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"></Space>
+
+                    <EditText
+                        android:layout_width="370dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/cust_edittextround2"
+                        android:fontFamily="@font/strait_normal"
+                        android:layout_gravity="center"
+                        android:inputType="text"
+                        android:hint=""
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:textColorHint="@color/black">
+                    </EditText>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tags"
+                        android:fontFamily="@font/strait_normal"
+                        android:textSize="15dp"
+                        android:paddingLeft="15dp">
+
+                    </TextView>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"></Space>
+
+                    <EditText
+                        android:layout_width="370dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/cust_edittextround2"
+                        android:fontFamily="@font/strait_normal"
+                        android:layout_gravity="center"
+                        android:inputType="text"
+                        android:hint=""
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:textColorHint="@color/black">
+                    </EditText>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:fontFamily="@font/strait_normal"
+                        android:textSize="15dp"
+                        android:paddingLeft="15dp">
+
+                    </TextView>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"></Space>
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="360dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/cust_edittextround2"
+                            android:fontFamily="@font/strait_normal"
+                            android:inputType="text|textMultiLine"
+                            android:text="Phant-Solo volume 3
+                            thank you for purchasing"
+                            android:gravity="top"
+                            android:paddingLeft="10dp"
+                            android:layout_margin="10dp"
+                            android:textColorHint="@color/black">
+                        </EditText>
+                    </ScrollView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload cover art"
+                        android:fontFamily="@font/strait_normal"
+                        android:textSize="15dp"
+                        android:paddingLeft="15dp">
+
+                    </TextView>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"></Space>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="400dp"
+                        android:src="@drawable/taishi1"
+                        android:scaleX="1"
+                        android:scaleY="1"
+                        android:padding="10dp"
+                        android:foregroundGravity="">
+
+                    </ImageView>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="350dp"
+                        android:layout_height="40dp"
+                        android:text="upload cover art"
+                        android:fontFamily="@font/strait_normal"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:background="@drawable/cust_btngreyrounded1">
+                    </androidx.appcompat.widget.AppCompatButton>
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"></Space>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload music*"
+                        android:fontFamily="@font/strait_normal"
+                        android:textSize="15dp"
+                        android:paddingLeft="15dp">
+
+                    </TextView>
+
+
+
+                    <EditText
+                        android:layout_width="370dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/cust_edittextround2"
+                        android:fontFamily="@font/strait_normal"
+                        android:layout_gravity="center"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:layout_margin="10dp"
+                        android:textColorHint="@color/black">
+                    </EditText>
+
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/upload_song"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:text="upload song"
+                    android:fontFamily="@font/strait_normal"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@drawable/cust_btnblue1">
+                </androidx.appcompat.widget.AppCompatButton>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"></Space>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

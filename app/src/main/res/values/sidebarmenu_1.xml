@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="sidebarmenu_font">
+        <item name="fontFamily">@font/strait_normal</item>
+    </style>
+    <attr name="colorNavigationItem" format="color"/>
+    <attr name="colorNavigationItemSelected" format="color"/>
+
+    <attr name="drawableNavigationItemBackground" format="reference"/>
+</resources>

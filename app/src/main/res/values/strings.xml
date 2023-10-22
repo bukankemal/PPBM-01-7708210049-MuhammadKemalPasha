@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Echo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_nav">Open</string>
+    <string name="close_nav">Close</string>
+    <string-array name="user_type">
+        <item>Listener</item>
+        <item>Artist</item>
+        <item>Label</item>
+    </string-array>
+    <string name="forgot_password">Forgot your password?</string>
+</resources>

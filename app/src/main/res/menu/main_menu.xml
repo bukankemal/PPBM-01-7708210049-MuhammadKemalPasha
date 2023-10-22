@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home_sidebar"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home"
+            />
+        <item android:id="@+id/browse_sidebar"
+            android:icon="@drawable/baseline_web_24"
+            android:title="Browse"
+            />
+        <item android:id="@+id/library_sidebar"
+            android:icon="@drawable/baseline_book_24"
+            android:title="Library"
+            />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/upload_sidebar"
+            android:icon="@drawable/baseline_file_upload_24"
+            android:title="Upload"
+            />
+        <item android:id="@+id/profile_sidebar"
+            android:icon="@drawable/baseline_account_circle_24"
+            android:title="About Developer"
+            />
+    </group>
+
+</menu>

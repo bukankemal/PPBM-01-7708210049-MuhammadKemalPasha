@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        ... >
+        <!-- A CardView that contains a TextView -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+
+            card_view:cardCornerRadius="20dp"
+            card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:id="@+id/release_tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:padding="10dp"
+                        android:src="@drawable/white_square_rounded"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="20dp"
+                        android:fontFamily="@font/strait_normal"
+                        android:textSize="30dp"
+                        android:text="NEW RELEASE!"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="400dp"
+                        android:src="@drawable/fery1"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5">
+
+                    </ImageView>
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Feryquitous"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/strait_normal"
+                        android:gravity="center|bottom"
+                        android:layout_marginBottom="50dp"/>
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Estahv"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/strait_normal"
+                        android:gravity="center|bottom"
+                        android:layout_marginBottom="20dp"/>
+                </RelativeLayout>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+       <Space
+           android:layout_width="wrap_content"
+           android:layout_height="10dp">
+
+       </Space>
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/release_tab"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:padding="10dp"
+                    android:src="@drawable/white_square_rounded"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:fontFamily="@font/strait_normal"
+                    android:textSize="30dp"
+                    android:text="TRENDING!"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:src="@drawable/acloudy1"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5">
+
+                </ImageView>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Acloudyskye"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/strait_normal"
+                    android:gravity="center|bottom"
+                    android:layout_marginBottom="50dp"/>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Heliov"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/strait_normal"
+                    android:gravity="center|bottom"
+                    android:layout_marginBottom="20dp"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/release_tab"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:padding="10dp"
+                    android:src="@drawable/white_square_rounded"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    android:fontFamily="@font/strait_normal"
+                    android:textSize="30dp"
+                    android:text="NEW RELEASE!"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    android:src="@drawable/nomak1"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5">
+
+                </ImageView>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Nomak"
+                    android:textSize="30dp"
+                    android:fontFamily="@font/strait_normal"
+                    android:gravity="center|bottom"
+                    android:layout_marginBottom="50dp"/>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Everyone_has_a_reason_to_pray"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/strait_normal"
+                    android:gravity="center|bottom"
+                    android:layout_marginBottom="20dp"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>
