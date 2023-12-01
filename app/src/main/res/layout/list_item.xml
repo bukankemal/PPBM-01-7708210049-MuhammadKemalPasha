@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/release_tab"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/listImages"
+        android:src="@drawable/fery1"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:padding="10dp"
+        android:foregroundGravity="">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/listArtists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Feryquitous"
+        android:textSize="30dp"
+        android:gravity="bottom"
+        android:fontFamily="@font/strait_normal"
+
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/listTitles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Estahv"
+        android:textSize="20dp"
+        android:gravity="bottom"
+        android:fontFamily="@font/strait_normal"
+
+        android:paddingLeft="10dp"/>
+</LinearLayout>
+</LinearLayout>

@@ -1,140 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WebFragment"
-    android:background="@color/bg_grey">
-    <LinearLayout
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <!-- TODO: Update blank fragment layout -->
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:fontFamily="@font/strait_normal"
+        android:textSize="30dp"
+        android:text="Collection"/>
         <androidx.cardview.widget.CardView
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:id="@+id/card_view"
             android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
 
             card_view:cardCornerRadius="20dp"
             card_view:cardUseCompatPadding="true">
-
-            <LinearLayout
-                android:id="@+id/release_tab"
+            <ListView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="20dp"
-                        android:fontFamily="@font/strait_normal"
-                        android:textSize="30dp"
-                        android:text="Collection"/>
-                </RelativeLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="400dp"
-                        android:src="@drawable/fery1"
-                        android:scaleX="1"
-                        android:scaleY="1"
-                        android:padding="10dp"
-                        android:foregroundGravity="">
-
-                    </ImageView>
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Feryquitous"
-                        android:textSize="30dp"
-                        android:gravity="bottom"
-                        android:fontFamily="@font/strait_normal"
-
-                        android:paddingLeft="10dp"/>
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Estahv"
-                        android:textSize="20dp"
-                        android:gravity="bottom"
-                        android:fontFamily="@font/strait_normal"
-
-                        android:paddingLeft="10dp"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="400dp"
-                        android:src="@drawable/acloudy2"
-                        android:scaleX="1"
-                        android:scaleY="1"
-                        android:padding="10dp"
-                        android:foregroundGravity="">
-
-                    </ImageView>
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="acloudyskye"
-                        android:textSize="30dp"
-                        android:gravity="bottom"
-                        android:fontFamily="@font/strait_normal"
-
-                        android:paddingLeft="10dp"/>
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Curses"
-                        android:textSize="20dp"
-                        android:gravity="bottom"
-                        android:fontFamily="@font/strait_normal"
-
-                        android:paddingLeft="10dp"/>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="400dp"
-                        android:src="@drawable/underscores1"
-                        android:scaleX="1"
-                        android:scaleY="1"
-                        android:padding="10dp"
-                        android:foregroundGravity="">
-
-                    </ImageView>
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="underscores"
-                        android:textSize="30dp"
-                        android:gravity="bottom"
-                        android:fontFamily="@font/strait_normal"
-
-                        android:paddingLeft="10dp"/>
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Second Hand Embarassment"
-                        android:textSize="20dp"
-                        android:gravity="bottom"
-                        android:fontFamily="@font/strait_normal"
-
-                        android:paddingLeft="10dp"/>
-
-                </LinearLayout>
-            </LinearLayout>
+                android:id="@+id/listview"
+                tools:listitem="@layout/list_item">
+            </ListView>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
-</ScrollView>

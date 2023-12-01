@@ -92,7 +92,7 @@
                 android:layout_height="30dp"
                 android:background="@drawable/cust_edittextround1"
                 android:fontFamily="@font/strait_normal"
-
+                android:inputType="textPassword"
                 android:hint=""
                 android:paddingLeft="10dp"
                 android:textColorHint="@color/black">

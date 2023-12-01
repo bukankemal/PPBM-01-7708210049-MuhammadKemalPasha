@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Assesmen1_PPBM"
         tools:targetApi="31">
         <activity
+            android:name=".ListItemDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".ForgotPassActivity"
             android:exported="false" />
         <activity
