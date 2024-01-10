@@ -143,6 +143,23 @@
                 android:background="@drawable/cust_btnblue1">
             </androidx.appcompat.widget.AppCompatButton>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+            </Space>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logdev_mainmenu"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:text="LOG IN (DEV)"
+                android:fontFamily="@font/strait_normal"
+                android:textColor="@color/white"
+                android:background="@drawable/cust_btnblue1">
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+
         </LinearLayout>
     </FrameLayout>
 

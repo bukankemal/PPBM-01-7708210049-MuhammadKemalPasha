@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnNextPage = findViewById<Button>(R.id.reg_mainmenu)
         val btnLogIn = findViewById<Button>(R.id.log_mainmenu)
+        val btnLogInDev = findViewById<Button>(R.id.logdev_mainmenu)
         val forgotPass = findViewById<TextView>(R.id.forgot_pass)
         btnNextPage.setOnClickListener{
             val _intent = Intent(this, RegisterActivity::class.java)
@@ -23,6 +24,10 @@ class MainActivity : AppCompatActivity() {
 
         btnLogIn.setOnClickListener {
             val _intent = Intent(this, DashboardActivity::class.java)
+            startActivity(_intent)
+        }
+        btnLogInDev.setOnClickListener {
+            val _intent = Intent(this, DashboardDevActivity::class.java)
             startActivity(_intent)
         }
 

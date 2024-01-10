@@ -54,7 +54,7 @@
                 android:id="@+id/listDescDetailed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Estahv"
+                android:text="detail of the song here to be put by the code listview"
                 android:textSize="20dp"
                 android:gravity="bottom"
                 android:fontFamily="@font/strait_normal"
