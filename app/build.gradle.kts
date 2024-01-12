@@ -1,7 +1,6 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-
 }
 
 
@@ -47,7 +46,9 @@ dependencies {
     implementation ("com.github.smarteist:Android-Image-Slider:1.4.0")
     implementation ("com.github.bumptech.glide:glide:4.11.0")
     implementation ("com.ncorti:slidetoact:0.11.0")
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation  ("androidx.core:core-ktx:1.9.0")
+    implementation  ("androidx.viewpager2:viewpager2:1.0.0")
+
 
 
     implementation("androidx.appcompat:appcompat:1.6.1")

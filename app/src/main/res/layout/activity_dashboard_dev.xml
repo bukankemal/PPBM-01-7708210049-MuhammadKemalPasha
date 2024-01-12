@@ -6,20 +6,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/background" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="Slide to confirm that you are not a robot"
+                android:fontFamily="@font/strait_normal">
+
+            </TextView>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="10dp">
+
+            </Space>
+            <com.ncorti.slidetoact.SlideToActView
+                android:id="@+id/example"
+                app:outer_color="@color/blue_echo"
+                app:border_radius="10dp"
+                app:text_color="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="0"
+                app:text="Slide to confirm"/>
+        </LinearLayout>
+    </FrameLayout>
 
     <!--on below line we are creating a new text view-->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:padding="8dp"
-        android:text="Auto Image Slider"
-        android:textAlignment="center"
-        android:textColor="@color/blue_echo"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+
 
     <!--
     slideranimation duration is to set duration for transition between two slides
@@ -35,29 +76,8 @@
         slider scroll time in sec is used to specify scrolling time in seconds
     -->
     
-    <com.smarteist.autoimageslider.SliderView
-        android:id="@+id/slider"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_centerInParent="true"
-        app:sliderAnimationDuration="600"
-        app:sliderAutoCycleDirection="back_and_forth"
-        app:sliderIndicatorAnimationDuration="600"
-        app:sliderIndicatorEnabled="true"
-        app:sliderIndicatorGravity="center_horizontal|bottom"
-        app:sliderIndicatorMargin="15dp"
-        app:sliderIndicatorOrientation="horizontal"
-        app:sliderIndicatorPadding="3dp"
-        app:sliderIndicatorRadius="2dp"
-        app:sliderIndicatorSelectedColor="#5A5A5A"
-        app:sliderIndicatorUnselectedColor="#FFF"
-        app:sliderScrollTimeInSec="1" />
 
-    <com.ncorti.slidetoact.SlideToActView
-        android:id="@+id/example"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        app:text="Example" />
+
+
 
 </LinearLayout>
